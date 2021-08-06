@@ -1,0 +1,328 @@
+/* -------------------------------
+        imported font style 
+----------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+/*---------------------------------
+         common styles       
+-----------------------------------*/
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  border: 5px dashed red;
+}
+
+/* --------------------------------
+         nav area style
+---------------------------------- */
+
+nav {
+  background-color: rgb(20, 20, 114);
+  height: 114px;
+  width: 100%;
+ 
+}
+#login{
+ 
+display: inline-block;
+
+
+
+}
+#second{
+    float: right;
+}
+
+
+nav ul {
+  float: left;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+ 
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 7px 13px;
+  text-decoration: none;
+  background-color: #dc1450d9;
+}
+
+nav ul li a:hover {
+  background-color: goldenrod;
+  
+  color: black;
+}
+/* --------------------------------
+        top area style
+---------------------------------- */
+.top-area {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background: rgb(20, 20, 114) ;
+  color: white;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.half-width {
+  width: 100%;
+  height: 677px;
+}
+
+.watch-live-title {
+  width: 485px;
+  height: 230px;
+  font-size: 64px;
+  line-height: 80px;
+  margin: 100px 102px 27px 156px;
+}
+.watch-view:hover{
+    transform: scale(1.2);
+}
+
+.watch-live-button {
+  margin: 0px 419px 169px 156px;
+  padding: 10px 24px;
+  position: absolute;
+  transition: transform 1s ease-in-out 0.2s;
+  text-decoration: none;
+  background-color: #dc1450d9;
+  color: white;
+}
+
+.watch-live-button:hover {
+  transform: scale(1.2);
+}
+
+.fa-arrow-right-custom {
+  transition: transform 1s ease-in-out 0.2s;
+}
+
+.watch-live-button:hover .fa-arrow-right-custom {
+  transform: translateX(8px) scale(1.5);
+}
+
+.watch-view img {
+  width: 556.01px;
+  height: 438px;
+  margin: 100px 140px 86px 0px;
+}
+
+/* -----------------------------
+      players area style 
+-------------------------------*/
+.player-area {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  margin-bottom: 0px;
+}
+
+.players {
+  width: 1050px;
+  padding: 33px 30px 0px 30px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.player {
+  height: 450px;
+  width: 300px;
+  padding: 15px;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  margin: 0px 30px 27px 0px;
+  
+}
+
+.player img {
+  width: 300px;
+
+}
+
+.player-info {
+  width: 300px;
+}
+
+/* -----------------------------
+          trending area style
+-------------------------------*/
+.trending-area {
+  margin: 1% 1% 6% 1%;
+  color: #535558;
+  
+  
+}
+.trending-area h2 {
+  font-size: 30px;
+  text-align: center;
+
+}
+.trending {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 3% 7% 0% 7%;
+
+  
+}
+.trending-inner {
+  box-shadow: 3px 5px 5px 3px lightgrey;
+  margin: 15px;
+  padding: 25px;
+  cursor: pointer;
+}
+.trending-inner:hover img {
+  transform: scale(1.1);
+}
+.trending-inner img {
+  width: 310px;
+  height: 206px;
+  transition: 2s;
+}
+.trending-details {
+  margin-top: 15px;
+}
+/* -----------------------------
+          score area style
+-------------------------------*/
+.score-area {
+  background: #000000b5;
+  margin-bottom: 70px;
+  padding-top: 40px;
+  color: white;
+}
+.score-area h1 {
+  text-align: center;
+}
+.scores {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3%;
+}
+.score {
+  margin: 10px;
+  background: #b31e1ee0;
+  padding: 30px;
+}
+.trophy,
+.score-area span {
+  font-size: 40px;
+  color: #fdc52c;
+}
+/* -----------------------------
+          footer style 
+-------------------------------*/
+.footer-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 213px;
+  
+}
+
+.footer-area img {
+  width: 484px;
+  height: 110px;
+}
+
+.social-links ul {
+  display: flex;
+  padding-left: 0;
+}
+
+.social-links ul li {
+  list-style-type: none;
+  margin: 0 14px;
+}
+
+.social-links ul li .fab {
+  font-size: 17px;
+  line-height: 35px;
+}
+
+.social-links ul li a {
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: #969bab;
+  background-color: #d3d3d399;
+  text-align: center;
+}
+/* ------------------------------
+      Media Queries Style
+ ------------------------------*/
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 100%;
+  }
+  .top-area,
+  .players,
+  .scores,
+  .trending {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .watch-live-title {
+    width: 1%;
+    height: 50%;
+    line-height: 91px;
+    margin: 20% 0% 13% 21%;
+  }
+  .players {
+    width: 50%;
+  }
+  .scores {
+    width: 90%;
+  }
+  .footer-area {
+    width: 200%;
+  }
+  .social-links ul {
+    flex-direction: column;
+  }
+}
+
+/* tablet devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+  .top-area,
+  .players,
+  .scores,
+  .trending {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .watch-live-title {
+    width: 1%;
+    height: 50%;
+    line-height: 91px;
+    margin: 20% 0% 13% 21%;
+  }
+  .players {
+    width: 50%;
+  }
+  .scores {
+    width: 90%;
+  }
+  .footer-area {
+    width: 200%;
+  }
+  .social-links ul {
+    flex-direction: column;
+  }
+}
+
